@@ -1,0 +1,7 @@
+C:\Users\champ\Desktop\Workspace\C#\BasicCS\BasicCS\bin\Debug\BasicCS.exe.config
+C:\Users\champ\Desktop\Workspace\C#\BasicCS\BasicCS\bin\Debug\BasicCS.exe
+C:\Users\champ\Desktop\Workspace\C#\BasicCS\BasicCS\bin\Debug\BasicCS.pdb
+C:\Users\champ\Desktop\Workspace\C#\BasicCS\BasicCS\obj\Debug\BasicCS.csproj.AssemblyReference.cache
+C:\Users\champ\Desktop\Workspace\C#\BasicCS\BasicCS\obj\Debug\BasicCS.csproj.CoreCompileInputs.cache
+C:\Users\champ\Desktop\Workspace\C#\BasicCS\BasicCS\obj\Debug\BasicCS.exe
+C:\Users\champ\Desktop\Workspace\C#\BasicCS\BasicCS\obj\Debug\BasicCS.pdb
