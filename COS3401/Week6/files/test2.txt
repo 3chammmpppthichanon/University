@@ -1,0 +1,6 @@
+Types of Text Files
+In the general sense, a text file refers to any file that has only text and is void of images and other non-text characters. 
+These sometimes use the TXT file extension but don't necessarily need to. 
+For example, a Word document that is an essay containing just text can be in the DOCX file format but still be called a text file.
+Of course, files with the .TXT extension are text files, too, and are commonly used to store things that can be easily opened with any text editor or written to with a simple script. 
+ในวันพรุ่งนี้ (1 ก.พ.) หลังจากรางวัลออกแล้ว เราจะคัดเลขที่ถูกรางวัล นำส่งไปให้ดีเอสไอ และทางดีเอสไอจะติดต่อลูกค้า แล้วก็รีบนำลอตเตอรีถูกรางวัลส่งให้ถึงมือลูกค้า ภายใน 7 วัน
