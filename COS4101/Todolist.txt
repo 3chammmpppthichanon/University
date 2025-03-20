@@ -2,24 +2,24 @@
 1. **การจัดการผู้ใช้ (User Management)**:
     - แสดงรายการผู้ใช้ทั้งหมดพร้อมบทบาท (List All Users)
     - การลบผู้ใช้ (Delete User)
-    - ระบบเข้าสู่ระบบ (`Login`) และออกจากระบบ (`Logout`)
+    + ระบบเข้าสู่ระบบ (`Login`) และออกจากระบบ (`Logout`) 
 
 ### **ฟังก์ชันที่เกี่ยวข้องกับโมเดล Project**
 1. **การจัดการโปรเจ็กต์ (Project Management)**:
-    - สร้างโปรเจ็กต์ใหม่ (Create Project)
-    - แก้ไขข้อมูลโปรเจ็กต์ (Edit Project)
-    - ลบโปรเจ็กต์ (Delete Project)
-    - แสดงรายการโปรเจ็กต์ทั้งหมด (List All Projects)
-    - ค้นหาโปรเจ็กต์ (Search Project by Title, Category, หรือ Status) (Optional)
-    - แสดงรายละเอียดของโปรเจ็กต์เฉพาะ (View Project Details) (Optional)
-    - เพิ่มนักศึกษาเข้าร่วมในโปรเจ็กต์ (Add Students to Project)
+    + สร้างโปรเจ็กต์ใหม่ (Create Project) 
+    + แก้ไขข้อมูลโปรเจ็กต์ (Edit Project) 
+    + ลบโปรเจ็กต์ (Delete Project) 
+    + แสดงรายการโปรเจ็กต์ทั้งหมด (List All Projects) 
+    + ค้นหาโปรเจ็กต์ (Search Project by Title, Category, หรือ Status) (Optional)
+    + แสดงรายละเอียดของโปรเจ็กต์เฉพาะ (View Project Details) (Optional)
+    + เพิ่มนักศึกษาเข้าร่วมในโปรเจ็กต์ (Add Students to Project)
     - เพิ่มอาจารย์ที่ปรึกษา/Advisor ให้กับโปรเจ็กต์ (Assign Advisor to Project)
 
 ### **ฟังก์ชันที่เกี่ยวข้องกับโมเดล Submission**
 1. **การจัดการไฟล์งานส่ง (Submission Management)**:
-    - อัพโหลดไฟล์งานส่งสำหรับโปรเจ็กต์ (Submit File)
-    - ดูรายการไฟล์งานส่งทั้งหมดที่เกี่ยวข้องกับโปรเจ็กต์ (List Submissions)
-    - ดาวน์โหลดไฟล์งานกลับมาตรวจ (Download Submitted Files) (Optional)
+    + อัพโหลดไฟล์งานส่งสำหรับโปรเจ็กต์ (Submit File)
+    + ดูรายการไฟล์งานส่งทั้งหมดที่เกี่ยวข้องกับโปรเจ็กต์ (List Submissions)
+    + ดาวน์โหลดไฟล์งานกลับมาตรวจ (Download Submitted Files) (Optional)
 
 ### **ฟังก์ชันที่เกี่ยวข้องกับโมเดล Evaluation**
 1. **การประเมินผลโปรเจ็กต์ (Evaluation Management)**:
