@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
