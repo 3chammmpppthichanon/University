@@ -1,0 +1,82 @@
+﻿// Implementation Interface
+using System.Windows.Markup;
+
+public interface IColor
+{
+    string ApplyColor();
+}
+
+// Concrete Implementations
+public class Red : IColor
+{
+    public string ApplyColor()
+    {
+        return "applying red color";
+    }
+}
+
+public class Blue : IColor
+{
+    public string ApplyColor()
+    {
+        return "applying blue color";
+    }
+}
+
+// Abstraction
+public abstract class Shape
+{
+    // Bridge to Implementation
+    protected IColor _color;
+
+    public Shape(IColor color)
+    {
+        _color = color;
+    }
+
+    public abstract void Draw();
+}
+
+// Refined Abstractions
+public class Circle : Shape
+{
+    public Circle(IColor color) : base(color)
+    {
+    }
+
+    public override void Draw()
+    {
+        Console.WriteLine($"Circle drawn. {_color.ApplyColor()}");
+    }
+}
+
+public class Square : Shape
+{
+    public Square(IColor color) : base(color)
+    {
+    }
+
+    public override void Draw()
+    {
+        Console.WriteLine($"Square drawn. {_color.ApplyColor()}");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var values = new Red();
+        Console.WriteLine("Values object information:");
+        Console.WriteLine($"ToString(): {values}");
+        Console.WriteLine($"Type: {values.GetType()}");
+        Console.WriteLine($"Implements IColor: {values is IColor}");
+        Console.WriteLine($"ApplyColor() result: {values.ApplyColor()}");
+        Console.WriteLine("--------------------------");
+        Shape redCircle = new Circle(new Red());
+        redCircle.Draw(); // Output: Circle drawn. applying red color
+
+        Shape blueSquare = new Square(new Blue());
+        blueSquare.Draw(); // Output: Square drawn. applying blue color
+    }
+}

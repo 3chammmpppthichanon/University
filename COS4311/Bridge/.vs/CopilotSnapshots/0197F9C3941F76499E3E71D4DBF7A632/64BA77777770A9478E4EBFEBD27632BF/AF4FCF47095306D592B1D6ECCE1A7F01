@@ -1,0 +1,120 @@
+﻿using System;
+
+namespace Bridge
+{
+    public interface IRubberMaterial
+    {
+        public string GetMaterialType();
+        public int Durability { get; set; }
+        public double TemperatureResistance { get; set; } // Maximum temperature in Celsius
+        public decimal CostPerUnit { get; set; }
+        public double Weight { get; set; } // Weight in kg
+        public double CalculateWearRate();
+        public string GetMaterialSpecifications();
+    }
+
+    public class NaturalRubber : IRubberMaterial
+    {
+        public int Durability { get; set; } = 70;
+        public double TemperatureResistance { get; set; } = 70.0; // Natural rubber has lower heat resistance
+        public decimal CostPerUnit { get; set; } = 5.0m;
+        public double Weight { get; set; } = 1.2;
+
+        public NaturalRubber() => Console.WriteLine("Creating Natural Rubber");
+        public string GetMaterialType() => "Natural Rubber";
+        public double CalculateWearRate() => (100 - Durability) * 0.1;
+        public string GetMaterialSpecifications() => 
+            $"Material: {GetMaterialType()}\n" +
+            $"Durability: {Durability}\n" +
+            $"Temperature Resistance: {TemperatureResistance}°C\n" +
+            $"Cost per Unit: ${CostPerUnit}\n" +
+            $"Weight: {Weight}kg\n" +
+            $"Wear Rate: {CalculateWearRate():F2}%/month";
+    }
+
+    public class SyntheticRubber : IRubberMaterial
+    {
+        public int Durability { get; set; } = 85;
+        public double TemperatureResistance { get; set; } = 100.0; // Synthetic rubber has higher heat resistance
+        public decimal CostPerUnit { get; set; } = 7.5m;
+        public double Weight { get; set; } = 1.0;
+
+        public SyntheticRubber() => Console.WriteLine("Creating Synthetic Rubber");
+        public string GetMaterialType() => "Synthetic Rubber";
+        public double CalculateWearRate() => (100 - Durability) * 0.08; // Synthetic rubber wears slower
+        public string GetMaterialSpecifications() =>
+            $"Material: {GetMaterialType()}\n" +
+            $"Durability: {Durability}\n" +
+            $"Temperature Resistance: {TemperatureResistance}°C\n" +
+            $"Cost per Unit: ${CostPerUnit}\n" +
+            $"Weight: {Weight}kg\n" +
+            $"Wear Rate: {CalculateWearRate():F2}%/month";
+    }
+
+    public abstract class Tire
+    {
+        public string Type { get; set; }
+        public decimal Price { get; set; }
+        protected IRubberMaterial RubberMaterial { get; set; }
+
+        public abstract string GetDetail();
+    }
+
+    public class City : Tire
+    {
+        public City(IRubberMaterial rubberMaterial)
+        {
+            Console.WriteLine("Creating City Tire");
+            Type = "City Tire";
+            Price = 1000.00m;
+            RubberMaterial = rubberMaterial;
+        }
+
+        public override string GetDetail() => $"{Type} - Material {RubberMaterial.GetMaterialType()} - ${Price}";
+    }
+
+    public class Touring : Tire
+    {
+        public Touring(IRubberMaterial rubberMaterial)
+        {
+            Console.WriteLine("Creating Touring Tire");
+            Type = "Touring Tire";
+            Price = 1500.00m;
+            RubberMaterial = rubberMaterial;
+        }
+
+        public override string GetDetail() => $"{Type} - Material {RubberMaterial.GetMaterialType()} - ${Price}";
+    }
+
+    public class Sport : Tire
+    {
+        public Sport(IRubberMaterial rubberMaterial)
+        {
+            Console.WriteLine("Creating Sport Tire");
+            Type = "Sport Tire";
+            Price = 2000.00m;
+            RubberMaterial = rubberMaterial;
+        }
+
+        public override string GetDetail() => $"{Type} - Material {RubberMaterial.GetMaterialType()} - ${Price}";
+    }
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            IRubberMaterial naturalRubber = new NaturalRubber();
+            Tire touringTire1 = new Touring(naturalRubber);
+            Console.WriteLine(touringTire1.GetDetail());
+
+            IRubberMaterial syntheticRubber = new SyntheticRubber();
+            Tire touringTire2 = new Touring(syntheticRubber);
+            Console.WriteLine(touringTire2.GetDetail());
+
+            Tire sportTire = new Sport(syntheticRubber);
+            Console.WriteLine(sportTire.GetDetail());
+
+            Tire cityTire = new City(syntheticRubber);
+            Console.WriteLine(cityTire.GetDetail());
+        }
+    }
+}

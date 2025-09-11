@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\icatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\icatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 638,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ICatalog.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\ICatalog.cs",
+              "RelativeDocumentMoniker": "Composite\\ICatalog.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\ICatalog.cs",
+              "RelativeToolTip": "Composite\\ICatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T02:51:10.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Program.cs",
+              "RelativeDocumentMoniker": "Composite\\Program.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Program.cs",
+              "RelativeToolTip": "Composite\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:58:03.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Product.cs",
+              "RelativeDocumentMoniker": "Composite\\Product.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Product.cs",
+              "RelativeToolTip": "Composite\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:37:28.476Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 339,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
