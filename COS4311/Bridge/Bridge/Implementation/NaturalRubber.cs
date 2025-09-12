@@ -29,23 +29,25 @@ namespace Bridge
         }
         // Constructor parameters
         public NaturalRubber(int durability, decimal costPerKg, int density,
-            string scourceCountry, decimal purityLevel, string typeTire = "Natural Rubber")
+            string sourceCountry, decimal purityLevel, string typeTire = "Natural Rubber")
         {
             TypeTire = typeTire;
             Durability = durability;
             CostPerKg = costPerKg;
             Density = density;
-            SourceCountry = scourceCountry;
+            SourceCountry = sourceCountry;
             PurityLevel = purityLevel; // ความบริสุทธิ์
         }
 
         // Methods
-        public void GetDetails()
+        public void GetMaterial()
         {
             Console.WriteLine($"=== Natural Rubber Details ===");
             Console.WriteLine(
                 $"Type: {TypeTire}, Durability: {Durability}/100, " + $"CostPerKg: ${CostPerKg:F2}, Density: {Density} kg/m^3, " +
-                $"ScourceCountry: {SourceCountry}, " + $"PurityLevel: {PurityLevel:F1}");
+                $"SourceCountry: {SourceCountry}, " + $"PurityLevel: {PurityLevel:F1}");
+            Console.WriteLine($"Quality Grade: {GetQualityGrade()}");
+            Console.WriteLine($"Weight Material: {CalculateWeight(0.05m)} kg"); // Example volume
         }
         public decimal CalculateWeight(decimal volume)
         {

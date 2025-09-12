@@ -24,7 +24,7 @@ namespace Bridge
         }
 
         public override string GetDetail()
-            => $"({Brand}) - {Size}\" - {RubberMaterial.TypeTire} - ${Price:F2} - Max {MaxSpeed} km/h - HeatResist {HeatResistance}°C";
+            => $"HeatResist {HeatResistance}°C - {base.GetDetail()}";
 
         public override string GetRecommendedUsage()
             => "Suitable for long-distance driving, extended journeys, constant speed, focuses on comfort, quietness, and longevity";

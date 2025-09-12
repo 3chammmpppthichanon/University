@@ -37,12 +37,13 @@ namespace Bridge
         }
 
         // Methods
-        public void GetDetails()
+        public void GetMaterial()
         {
             Console.WriteLine("=== Synthetic Rubber Details ===");
             Console.WriteLine(
                 $"Type: {TypeTire}, Durability: {Durability}/100, CostPerKg: ${CostPerKg:F2}, " +
                 $"Density: {Density} kg/m^3, Chemical Composition: {ChemicalComposition}");
+            Console.WriteLine($"Weight Material: {CalculateWeight(0.05m)} kg"); // Example volume
         }
         public decimal CalculateWeight(decimal volume)
         {

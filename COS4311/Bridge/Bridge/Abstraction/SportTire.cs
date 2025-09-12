@@ -25,7 +25,7 @@ namespace Bridge
         }
 
         public override string GetDetail()
-            => $"({Brand}) - {Size}\" - {RubberMaterial.TypeTire} - ${Price:F2} - Max {MaxSpeed} km/h - Grip {GripLevel} - Cornering stability {CorneringStability}";
+            => $"Grip {GripLevel} - Cornering stability {CorneringStability} - {base.GetDetail()}";
 
         public override string GetRecommendedUsage()
             => "Suitable for sporty driving, frequent cornering, high road grip, designed for superior handling and control";

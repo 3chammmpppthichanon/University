@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thichanon\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj": {}
+    "C:\\Users\\champ\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thichanon\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj": {
+    "C:\\Users\\champ\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thichanon\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj",
+        "projectUniqueName": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj",
         "projectName": "Bridge",
-        "projectPath": "C:\\Users\\Thichanon\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj",
-        "packagesPath": "C:\\Users\\Thichanon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thichanon\\Desktop\\University\\COS4311\\Bridge\\Bridge\\obj\\",
+        "projectPath": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Bridge\\Bridge\\Bridge.csproj",
+        "packagesPath": "C:\\Users\\champ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Bridge\\Bridge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Thichanon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\champ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

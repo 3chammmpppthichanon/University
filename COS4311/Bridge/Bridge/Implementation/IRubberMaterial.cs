@@ -15,7 +15,7 @@ namespace Bridge
         public int Density { get; set; }
 
         // Method
-        public void GetDetails();
+        public void GetMaterial();
         decimal CalculateWeight(decimal volume);
     }
 }

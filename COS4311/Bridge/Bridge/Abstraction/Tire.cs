@@ -18,7 +18,14 @@ namespace Bridge
         public decimal WearFactor { get; set; } = 1.0m;
 
         // Abstract Methods
-        public abstract string GetDetail();
+        //public abstract string GetDetail();
+        //Console.WriteLine($"Price: {Price} - Size: {Size} - Maxspeed: {MaxSpeed} - Weight: {Weight} - Brand: {Brand} {RubberMaterial.GetDetails()}");
+
+        public virtual string GetDetail()
+        {
+            return $"({Brand}) - {Size}\" - Max {MaxSpeed} km/h - {Weight:F2} kg - ${Price:F2}\n" +
+                   $"Material -> {RubberMaterial.GetMaterial()}";
+        }
         public abstract string GetRecommendedUsage();
         public abstract decimal CalculateLifeSpan(int drivingHours);
         public virtual decimal CalculateTotalCost()
