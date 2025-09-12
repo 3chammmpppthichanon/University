@@ -14,8 +14,8 @@ namespace Bridge
         public int MaxSpeed { get; set; }
         public decimal Weight { get; set; }
         public string Brand { get; set; } = "Pirelli";
-        protected IRubberMaterial RubberMaterial { get; set; }
-        protected decimal WearFactor { get; set; } = 1.0m;
+        public IRubberMaterial RubberMaterial { get; set; }
+        public decimal WearFactor { get; set; } = 1.0m;
 
         // Abstract Methods
         public abstract string GetDetail();

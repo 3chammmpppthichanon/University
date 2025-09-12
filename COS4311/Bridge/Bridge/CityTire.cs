@@ -25,7 +25,7 @@ namespace Bridge
         }
 
         public override string GetDetail()
-            => $"({Brand}) - {Size}\" - {RubberMaterial.TypeTire} - ${Price:F2} - Max {MaxSpeed} km/h - Noise {NoiseLevel} dB - Fuel Saving {FuelEfficiencyFactor}%";
+            => $"({Brand}) - {Size}\" - {RubberMaterial.TypeTire} - ${Price:F2} - Max {MaxSpeed} km/h - Noise {NoiseLevel} dB - Fuel Saving {FuelEfficiencyFactor}% - Weight {RubberMaterial.CalculateWeight(Weight)} kg";
 
         public override string GetRecommendedUsage()
             => "Recommended for city use, smooth roads, moderate speeds, frequent braking/acceleration. Good grip in both dry and wet normal road conditions";
