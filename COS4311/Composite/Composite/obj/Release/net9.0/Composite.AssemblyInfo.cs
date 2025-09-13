@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Composite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+904242b33f18e24d82759a50e37fb1bd0adb2720")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+684aba97c5606c1bca8dfb20f3df9acc0db2952d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Composite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Composite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
