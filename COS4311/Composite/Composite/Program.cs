@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Composite.Composite;
+using Composite.Leaf;
 
 namespace Composite
 {
@@ -10,24 +8,21 @@ namespace Composite
     {
         static void Main(string[] args)
         {
-            var root = new Category("All Products");
+            // สร้างฮีโร่แต่ละตัว
+            var yuumi = new Yuumi("Final Chapter", magicDamage: 120, heal: 80, mana: 40, cost: 2, cooldown: 8, range: "Long");
+            var garen = new Garen("Judgment", attackDamage: 150, armor: 60, health: 900, mana: 50, cost: 3, cooldown: 10, range: "Melee");
+            var ezreal = new Ezreal("Trueshot Barrage", physicalDamage: 110, magicDamage: 100, mana: 60, cost: 4, cooldown: 12, range: "Long");
 
-            var shoes = new Category("Shoes");
-            var keyboards = new Category("Keyboards");
+            // สร้าง Trait Battle Academia
+            var battleAcademia = new Trait("Battle Academia champions upgrade their abilities and gain Potential Potential. Potential improves their abilities.");
 
+            // เพิ่มสมาชิก
+            battleAcademia.Add(yuumi);
+            battleAcademia.Add(garen);
+            battleAcademia.Add(ezreal);
 
-            shoes.Add(new Product("Ultraboost 22", "Adidas", 6800m, 1));
-            shoes.Add(new Product("Air Max 97", "Nike", 7200m, 2));
-
-            
-            keyboards.Add(new Product("K70 RGB", "Corsair", 3990m, 1));
-            keyboards.Add(new Product("BlackWidow V3", "Razer", 3290m, 1));
-
-            root.Add(shoes);
-            root.Add(keyboards);
-
-            root.Display();
-            Console.WriteLine($"Grand total: {root.CalculateTotalPrice():0.00}");
+            // แสดงข้อมูลกลุ่มและสมาชิก
+            battleAcademia.DisplayInfo();
         }
     }
 }

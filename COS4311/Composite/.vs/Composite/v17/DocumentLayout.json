@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\leaf\\garen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\leaf\\garen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\leaf\\yuumi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\leaf\\yuumi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\composite\\trait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\composite\\trait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\icomputercomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\icomputercomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\itft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\itft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\leaf\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\leaf\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\composite\\composite\\leaf\\ezreal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC5C2C3-BFC6-4928-AE45-1E24A3389F29}|Composite\\Composite.csproj|solutionrelative:composite\\leaf\\ezreal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 638,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IComputerComponent.cs",
-              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\IComputerComponent.cs",
-              "RelativeDocumentMoniker": "Composite\\IComputerComponent.cs",
-              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\IComputerComponent.cs",
-              "RelativeToolTip": "Composite\\IComputerComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Hero.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Hero.cs",
+              "RelativeDocumentMoniker": "Composite\\Leaf\\Hero.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Hero.cs",
+              "RelativeToolTip": "Composite\\Leaf\\Hero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T02:51:10.275Z",
+              "WhenOpened": "2025-09-13T12:42:10.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ezreal.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Ezreal.cs",
+              "RelativeDocumentMoniker": "Composite\\Leaf\\Ezreal.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Ezreal.cs",
+              "RelativeToolTip": "Composite\\Leaf\\Ezreal.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T11:49:19.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Program.cs",
-              "RelativeDocumentMoniker": "Composite\\Program.cs",
-              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Program.cs",
-              "RelativeToolTip": "Composite\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Title": "Garen.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Garen.cs",
+              "RelativeDocumentMoniker": "Composite\\Leaf\\Garen.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Garen.cs",
+              "RelativeToolTip": "Composite\\Leaf\\Garen.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T15:58:03.456Z",
+              "WhenOpened": "2025-09-13T11:45:33.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Yuumi.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Yuumi.cs",
+              "RelativeDocumentMoniker": "Composite\\Leaf\\Yuumi.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Leaf\\Yuumi.cs",
+              "RelativeToolTip": "Composite\\Leaf\\Yuumi.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T11:34:44.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Product.cs",
-              "RelativeDocumentMoniker": "Composite\\Product.cs",
-              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Product.cs",
-              "RelativeToolTip": "Composite\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Title": "Trait.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Composite\\Trait.cs",
+              "RelativeDocumentMoniker": "Composite\\Composite\\Trait.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Composite\\Trait.cs",
+              "RelativeToolTip": "Composite\\Composite\\Trait.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T15:37:28.476Z"
+              "WhenOpened": "2025-09-13T11:10:32.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITFT.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\ITFT.cs",
+              "RelativeDocumentMoniker": "Composite\\ITFT.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\ITFT.cs",
+              "RelativeToolTip": "Composite\\ITFT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T11:07:13.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Program.cs",
+              "RelativeDocumentMoniker": "Composite\\Program.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\Composite\\Composite\\Program.cs",
+              "RelativeToolTip": "Composite\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:58:03.456Z",
+              "EditorCaption": ""
             }
           ]
         },
