@@ -23,8 +23,9 @@ namespace Bridge
 
         public virtual string GetDetail()
         {
-            return $"({Brand}) - {Size}\" - Max {MaxSpeed} km/h - {Weight:F2} kg - ${Price:F2}\n" +
-                   $"Material -> {RubberMaterial.GetMaterial()}";
+            Console.WriteLine("\n---Material---");
+            RubberMaterial.GetMaterial();
+            return $"({Brand}) - {Size}\" - Max {MaxSpeed} km/h - {Weight:F2} kg - ${Price:F2}";
         }
         public abstract string GetRecommendedUsage();
         public abstract decimal CalculateLifeSpan(int drivingHours);
