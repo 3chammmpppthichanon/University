@@ -1,95 +1,68 @@
-from typing import Any
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-def plt_image(img: Any, *, title: str = '', gray: bool = False) -> None:
-    plt.axis('off')
-    plt.imshow(img, cmap='gray' if gray else None)
-    if title:
-        plt.title(title)
-    plt.show()
-
-def show_plots(img1: Any, img2: Any, title1="Image 1", title2="Image 2"):
-    plt.figure(figsize=(10, 5))
-
-    # ภาพที่ 1
-    plt.subplot(1, 2, 1)
-    if len(img1.shape) == 2:  
-        plt.imshow(img1, cmap='gray')
-    else:
-        plt.imshow(img1)
-    plt.title(title1)
-    plt.axis('off')
-
-    # ภาพที่ 2 ตรวจสอบว่าเป็น Grayscale หรือไม่ เพื่อกำหนด cmap
-    plt.subplot(1, 2, 2)
-    if len(img2.shape) == 2:
-        plt.imshow(img2, cmap='gray')
-    else:
-        plt.imshow(img2)
-        
-    plt.title(title2)
-    plt.axis('off')
-
-    plt.show()
-
-def show_plots_3(img1: Any, img2: Any, img3: Any,
-    title1: str = "Image 1", 
-    title2: str = "Image 2", 
-    title3: str = "Image 3"):
-    
-    plt.figure(figsize=(15, 5))
-
-    # ภาพที่ 1
-    plt.subplot(1, 3, 1)
-    if len(img1.shape) == 2:
-        plt.imshow(img1, cmap='gray')
-    else:
-        plt.imshow(img1)
-    plt.title(title1)
-    plt.axis('off')
-
-    #ภาพที่ 2
-    plt.subplot(1, 3, 2)
-    if len(img2.shape) == 2:
-        plt.imshow(img2, cmap='gray')
-    else:
-        plt.imshow(img2)
-    plt.title(title2)
-    plt.axis('off')
-
-    #ภาพที่ 3
-    plt.subplot(1, 3, 3)
-    if len(img3.shape) == 2:
-        plt.imshow(img3, cmap='gray')
-    else:
-        plt.imshow(img3)
-    plt.title(title3)
-    plt.axis('off')
-    
-    #plt.tight_layout() # ช่วยจัด layout ให้สวยงาม ไม่ทับซ้อนกัน
-    plt.show()
-
-def cv_show(img: cv2.typing.MatLike, *, title: str = '') -> None:
-    cv2.imshow(title, img)
+def show_image_cv2(img, title = ''):
+    cv2.imshow(img, title)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
+def show_image_plt(img, title = '', gray = False):
+    plt.axis('off')
+    plt.imshow(img, cmap='gray' if gray else None)
 
-def power_gamma(img: cv2.typing.MatLike, gamma: float, *, c: float = 255.0) -> cv2.typing.MatLike:
-    table = np.array([i / 255.0 for i in range(256)])
-    gam_table = c * (table**gamma)
-    gam_table = gam_table.astype(np.uint8)
-    return cv2.LUT(normalize(img), gam_table)
+    if title:
+        plt.title(title)
+
+    plt.show()
+
+def show_images_plt(img1, img2, img3, titles=[]):
+
+    fig = plt.figure()
+
+    fig.add_subplot(131)
+    plt.plot(img1)
+    plt.title(titles[0])
+    plt.axis('off')
 
 
-def normalize(img: cv2.typing.MatLike) -> cv2.typing.MatLike:
-    img = img.astype(np.float32)
-    img = (img - img.min()) / (img.max() - img.min()) * 255
-    return img.astype(np.uint8)
+    fig.add_subplot(132)
+    plt.plot(img2)
+    plt.title(titles[1])
+    plt.axis('off')
 
+    fig.add_subplot(133)
+    plt.plot(img3)
+    plt.title(titles[2])
+    plt.axis('off')
+
+    plt.show()
+
+def power_gamma(img, gamma, c = 255.0):
+    # ข้ันตอนการ Norm
+    img_norm = img.astype(np.float16) / 255.0
+
+    # การทำ power gamma และแปลงค่ากลับ
+    gamma_img = (img_norm ** gamma) * c
+    gamma_img = gamma_img.astype(np.uint8)
+
+    return gamma_img
+
+
+# หาขอบภาพ
+def prewitt_operator_meth(img):
+    mask_gx = np.array([[-1, 0, 1], [-1, 0, 1], [-1, 0, 1]], dtype='float')
+    mask_gy = np.array([[-1, -1, -1], [0, 0, 0], [1, 1, 1]], dtype='float')
+    gx = cv2.filter2D(img, -1, mask_gx)
+    gy = cv2.filter2D(img, -1,  mask_gy)    
+    out = np.sqrt(gx**2 + gy**2)
+    return out.astype(np.uint8)
+
+def sobel_operator(img):
+    gx = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=3)  
+    gy = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=3)  
+    out = np.sqrt(gx**2 + gy**2)
+    return out.astype(np.uint8)
 
 def reduce_saturation(img_hsv: cv2.typing.MatLike, percent: float) -> cv2.typing.MatLike:
     img_hsv = img_hsv.astype(np.float32)
@@ -99,12 +72,10 @@ def reduce_saturation(img_hsv: cv2.typing.MatLike, percent: float) -> cv2.typing
 
 
 # color space
-
-
-def rgb_to_cmyk(image: cv2.typing.MatLike) -> cv2.typing.MatLike:
+def rgb_to_cmyk(image):
     rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     rgb_normalized = rgb_image / 255.0
-
+    
     R = rgb_normalized[:, :, 0]
     G = rgb_normalized[:, :, 1]
     B = rgb_normalized[:, :, 2]
@@ -113,22 +84,21 @@ def rgb_to_cmyk(image: cv2.typing.MatLike) -> cv2.typing.MatLike:
     C = 1 - R
     M = 1 - G
     Y = 1 - B
-
+    
     K = np.minimum(np.minimum(C, M), Y)
-
+    
     denominator = 1 - K
-    denominator[denominator == 0] = 1
-
+    denominator[denominator == 0] = 1  
+    
     C = (C - K) / denominator
     M = (M - K) / denominator
     Y = (Y - K) / denominator
+    
+    CMYK_image = (np.dstack((C, M, Y, K)) * 255).astype(np.uint8)
+    
+    return CMYK_image
 
-    cmyk_image = (np.dstack((C, M, Y, K)) * 255).astype(np.uint8)
-
-    return cmyk_image
-
-
-def cmyk_to_rgb(cmyk_image: cv2.typing.MatLike) -> cv2.typing.MatLike:
+def cmyk_to_rgb(cmyk_image):
     C = cmyk_image[:, :, 0] / 255.0
     M = cmyk_image[:, :, 1] / 255.0
     Y = cmyk_image[:, :, 2] / 255.0
@@ -142,58 +112,22 @@ def cmyk_to_rgb(cmyk_image: cv2.typing.MatLike) -> cv2.typing.MatLike:
 
     return rgb_image
 
-
-def rgb2cmyk(
-    img: cv2.typing.MatLike,
-    rgb_scale: float = 255.0,
-    cmyk_scale: float = 255.0,
-) -> tuple[
-    cv2.typing.MatLike,
-    cv2.typing.MatLike,
-    cv2.typing.MatLike,
-    cv2.typing.MatLike,
-]:
-    R = img[:, :, 2].astype(np.float16) / rgb_scale
-    G = img[:, :, 1].astype(np.float16) / rgb_scale
-    B = img[:, :, 0].astype(np.float16) / rgb_scale
-
-    C, M, Y = 1 - R, 1 - G, 1 - B
-    K = np.minimum.reduce([C, M, Y])
-
-    C = (C - K) * cmyk_scale
-    M = (M - K) * cmyk_scale
-    Y = (Y - K) * cmyk_scale
-    K = K * cmyk_scale
-
-    return C.astype(np.uint8), M.astype(np.uint8), Y.astype(np.uint8), K.astype(np.uint8)
-
-
-# thresholding
-
-
-def intermean(hist: cv2.typing.MatLike, t: int, start: int, end: int) -> int:
-    prob = np.zeros_like(hist, dtype=np.float16)
-    total = np.sum(hist[start:end])
-    prob[start:end] = hist[start:end] / total
-
-    w0 = np.sum(prob[start:t]) + 0.0000001
-    w1 = (1 - w0) + +0.0000001
-    # print('w1', w1)
-
-    t0 = np.array(list(range(start, t)))
-    t1 = np.array(list(range(t, end)))
-
-    u0 = np.sum(t0 * prob[start:t]) / w0
-    u1 = np.sum(t1 * prob[t:end]) / w1
-
-    if u0 == 0.0:
+def intermean(hist, t):
+    prob = hist/np.sum(hist)
+    
+    w0 = np.sum(prob[:t]) + 0.00000001
+    w1 = np.sum(prob[t:]) + 0.00000001
+    
+    u0 = np.sum(np.array([i for i in range(t)])*prob[:t])/w0
+    u1 = np.sum(np.array([i for i in range(t,256)])*prob[t:])/w1
+    if (u0 == 0.0):
         thr = u1
-    elif u1 == 0.0:
+    elif (u1 == 0.0):
         thr = u0
     else:
-        thr = (u0 + u1) / 2
+        thr = (u0 +u1) / 2
 
-    return thr.astype(np.int16)  # type: ignore
+    return thr.astype('int16')
 
 
 def apply_threshold(img: cv2.typing.MatLike, thresh: int | None = None, inverse: bool = False) -> cv2.typing.MatLike:
@@ -281,40 +215,6 @@ def otsu(hist: cv2.typing.MatLike, start: int, end: int) -> int:
             thr = t
 
     return thr
-
-
-def edge_operator_meth(img: cv2.typing.MatLike, k: int) -> cv2.typing.MatLike:
-    f = img.copy().astype(np.float32)
-    out = np.zeros_like(img, dtype=np.float32)
-    mask_gx = np.array(
-        [
-            [-1, 0, 1],
-            [-k, 0, k],
-            [-1, 0, 1],
-        ],
-        dtype='float16',
-    )
-    mask_gy = np.array(
-        [
-            [-1, -k, -1],
-            [0, 0, 0],
-            [1, k, 1],
-        ],
-        dtype='float16',
-    )
-    sz, sz = mask_gx.shape
-    bd = sz // 2
-    (m, n) = f.shape
-    for i in range(bd, m - bd):
-        for j in range(bd, n - bd):
-            gx, gy = 0.0, 0.0
-            sub_f = f[i - bd : i + bd + 1, j - bd : j + bd + 1]
-            # multiply คูณกัน ตำแหน่งที่ตรงกัน และ หาผลบวก
-            gx = np.multiply(sub_f, mask_gx).sum()
-            gy = np.multiply(sub_f, mask_gy).sum()
-            out[i, j] = np.sqrt(gx**2 + gy**2)
-    out[out > 255.0] = 255.0
-    return out.astype(np.uint8)
 
 def merge_quarters(
     img: cv2.typing.MatLike,
