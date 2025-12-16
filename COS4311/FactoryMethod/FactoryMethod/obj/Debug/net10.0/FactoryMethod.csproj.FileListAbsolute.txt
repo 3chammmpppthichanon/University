@@ -1,0 +1,15 @@
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\bin\Debug\net10.0\FactoryMethod.exe
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\bin\Debug\net10.0\FactoryMethod.deps.json
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\bin\Debug\net10.0\FactoryMethod.runtimeconfig.json
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\bin\Debug\net10.0\FactoryMethod.dll
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\bin\Debug\net10.0\FactoryMethod.pdb
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.AssemblyInfoInputs.cache
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.AssemblyInfo.cs
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.csproj.CoreCompileInputs.cache
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.sourcelink.json
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.dll
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\refint\FactoryMethod.dll
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.pdb
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\FactoryMethod.genruntimeconfig.cache
+C:\Users\champ\Desktop\University\COS4311\FactoryMethod\FactoryMethod\obj\Debug\net10.0\ref\FactoryMethod.dll

@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\abstractfactory\\abstractfactory\\factory\\concretefactory\\caferacerpartfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|solutionrelative:abstractfactory\\factory\\concretefactory\\caferacerpartfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\abstractfactory\\abstractfactory\\factory\\abstractfactory\\istallionspartsfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|solutionrelative:abstractfactory\\factory\\abstractfactory\\istallionspartsfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\abstractfactory\\abstractfactory\\product\\ihandlebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|solutionrelative:abstractfactory\\product\\ihandlebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|c:\\users\\champ\\desktop\\university\\cos4311\\abstractfactory\\abstractfactory\\product\\iseat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DA862B9-5330-4793-A631-67096BA2F098}|AbstractFactory\\AbstractFactory.csproj|solutionrelative:abstractfactory\\product\\iseat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IHandlebar.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Product\\IHandlebar.cs",
+              "RelativeDocumentMoniker": "AbstractFactory\\Product\\IHandlebar.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Product\\IHandlebar.cs",
+              "RelativeToolTip": "AbstractFactory\\Product\\IHandlebar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T06:52:33.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISeat.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Product\\ISeat.cs",
+              "RelativeDocumentMoniker": "AbstractFactory\\Product\\ISeat.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Product\\ISeat.cs",
+              "RelativeToolTip": "AbstractFactory\\Product\\ISeat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T06:52:32.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CafeRacerPartFactory.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Factory\\ConcreteFactory\\CafeRacerPartFactory.cs",
+              "RelativeDocumentMoniker": "AbstractFactory\\Factory\\ConcreteFactory\\CafeRacerPartFactory.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Factory\\ConcreteFactory\\CafeRacerPartFactory.cs",
+              "RelativeToolTip": "AbstractFactory\\Factory\\ConcreteFactory\\CafeRacerPartFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T06:51:24.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IStallionsPartsFactory.cs",
+              "DocumentMoniker": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Factory\\AbstractFactory\\IStallionsPartsFactory.cs",
+              "RelativeDocumentMoniker": "AbstractFactory\\Factory\\AbstractFactory\\IStallionsPartsFactory.cs",
+              "ToolTip": "C:\\Users\\champ\\Desktop\\University\\COS4311\\AbstractFactory\\AbstractFactory\\Factory\\AbstractFactory\\IStallionsPartsFactory.cs",
+              "RelativeToolTip": "AbstractFactory\\Factory\\AbstractFactory\\IStallionsPartsFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T06:46:24.209Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
